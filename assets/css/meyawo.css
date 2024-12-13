@@ -12290,3 +12290,13 @@ pre .code {
     }
 }
 
+span {
+    display: inline-block; /* Ensure spans are treated as block-like for width adjustments */
+    width: calc(100% + 30%); /* Increase the width by 30% */
+    max-width: calc(100% + 30%); /* Adjust max-width as well, if applicable */
+}
+
+.header-subtitle span {
+    width: calc(100% + 30%);
+    max-width: calc(100% + 30%);
+}
