@@ -12290,12 +12290,18 @@ pre .code {
     }
 }
 
-.header-content {
-    width: 65vw; /* Make the header content 65% of the viewport width */
-    max-width: none; /* Remove any restrictive max-width */
+.header {
+    width: 65vw; /* Set header width to 65% of the viewport */
+    max-width: none; /* Remove restrictive max-width settings */
     margin: 0 auto; /* Center align horizontally */
+    position: relative; /* Ensure proper positioning */
+}
+
+.header-content {
+    width: 100%; /* Ensure content spans the entire header area */
     text-align: left; /* Optional: Align text to the left */
 }
+
 
 
 
