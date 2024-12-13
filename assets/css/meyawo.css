@@ -12239,3 +12239,10 @@ pre .code {
 .section-lg {
   padding: 100px 0 !important;
 }
+
+.invisible {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+}
