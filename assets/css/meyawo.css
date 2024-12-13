@@ -12257,12 +12257,3 @@ pre .code {
 .visible {
     visibility: visible;
 }
-
-.header-subtitle {
-    display: inline-block; /* Ensures it acts like text instead of a block element */
-    text-align: left; /* Align the text to the left */
-    white-space: nowrap; /* Prevents text from wrapping to a new line */
-    margin: 0 auto; /* Keep it horizontally balanced in its container */
-    font-size: 1.25rem; /* Adjust font size for readability */
-}
-
