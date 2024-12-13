@@ -12290,10 +12290,12 @@ pre .code {
     }
 }
 
+/* Update for header-content to spread 60% of the screen */
 .header-content {
-    width: 130%; /* Increase width by 30% */
-    max-width: none; /* Remove any restrictive max-width */
-    margin-left: auto; /* Keep the content centered */
-    margin-right: auto; /* Keep the content centered */
+    width: 60%; /* Set width to 60% of the screen */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    text-align: left; /* Ensure content aligns to the left */
 }
+
 
