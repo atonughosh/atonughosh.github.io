@@ -12089,6 +12089,7 @@ pre .code {
       -ms-flex-positive: 1;
           flex-grow: 1;
   max-width: 60vw;
+  text-align: center;
 }
 
 .header .header-content .header-title .up {
