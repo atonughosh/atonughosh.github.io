@@ -12290,12 +12290,13 @@ pre .code {
     }
 }
 
-/* Update for header-content to spread 60% of the screen */
+/* Update for header-content to spread 60% of the viewport */
 .header-content {
-    width: 60%; /* Set width to 60% of the screen */
+    width: 60vw; /* Set width to 60% of the viewport width */
     margin-left: auto; /* Center horizontally */
     margin-right: auto; /* Center horizontally */
     text-align: left; /* Ensure content aligns to the left */
 }
+
 
 
