@@ -12248,12 +12248,11 @@ pre .code {
 }
 
 .seo-hidden {
-    visibility: hidden;
     position: absolute;
-    height: 0;
-    width: 0;
-    overflow: hidden;
+    left: -9999px;
+    top: -9999px;
 }
+
 
 .visible {
     visibility: visible;
