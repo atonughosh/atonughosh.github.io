@@ -12246,3 +12246,16 @@ pre .code {
     overflow: hidden;
     position: absolute;
 }
+
+.seo-hidden {
+    visibility: hidden;
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
