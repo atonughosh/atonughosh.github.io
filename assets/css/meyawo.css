@@ -12290,13 +12290,10 @@ pre .code {
     }
 }
 
-span {
-    display: inline-block; /* Ensure spans are treated as block-like for width adjustments */
-    width: calc(100% + 30%); /* Increase the width by 30% */
-    max-width: calc(100% + 30%); /* Adjust max-width as well, if applicable */
+.header-content {
+    width: 130%; /* Increase width by 30% */
+    max-width: none; /* Remove any restrictive max-width */
+    margin-left: auto; /* Keep the content centered */
+    margin-right: auto; /* Keep the content centered */
 }
 
-.header-subtitle span {
-    width: calc(100% + 30%);
-    max-width: calc(100% + 30%);
-}
