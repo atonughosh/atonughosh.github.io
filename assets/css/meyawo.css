@@ -12259,16 +12259,10 @@ pre .code {
 }
 
 .header-subtitle {
-    white-space: normal; /* Allow text to wrap naturally */
-    text-align: center; /* Center the text */
-    max-width: 100%; /* Prevent restricting the width unnecessarily */
-    margin: 0 auto; /* Ensure centering in the container */
-    font-size: 1.25rem; /* Adjust size for readability */
+    display: inline-block; /* Ensures it acts like text instead of a block element */
+    text-align: left; /* Align the text to the left */
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
+    margin: 0 auto; /* Keep it horizontally balanced in its container */
+    font-size: 1.25rem; /* Adjust font size for readability */
 }
 
-@media (max-width: 768px) {
-    .header-subtitle {
-        font-size: 1rem; /* Slightly smaller text on smaller screens */
-        text-align: center; /* Center-align for smaller screens too */
-    }
-}
