@@ -12286,17 +12286,17 @@ pre .code {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1320px; /* Increased from 1140px */
+        max-width: 1500px; /* Increased from 1140px */
     }
 }
 
-/* Update for header-content to spread 60% of the viewport */
 .header-content {
-    width: 60vw; /* Set width to 60% of the viewport width */
-    margin-left: auto; /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
-    text-align: left; /* Ensure content aligns to the left */
+    width: 65vw; /* 65% of the viewport width */
+    margin-left: auto; /* Center the header horizontally */
+    margin-right: auto; /* Center the header horizontally */
+    text-align: left; /* Align the content to the left */
 }
+
 
 
 
