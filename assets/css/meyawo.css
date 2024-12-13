@@ -12159,7 +12159,7 @@ pre .code {
     background-size: cover;
   }
   .header-content {
-    padding-left: calc(100% / 5) !important;
+    padding-left: calc(100% / 2) !important;
   }
 }
 
@@ -12288,18 +12288,6 @@ pre .code {
     .container {
         max-width: 1500px; /* Increased from 1140px */
     }
-}
-
-.header {
-    width: 100vw; /* Set header width to 65% of the viewport */
-    max-width: none; /* Remove restrictive max-width settings */
-    margin: 0 auto; /* Center align horizontally */
-    position: relative; /* Ensure proper positioning */
-}
-
-.header-content {
-    width: 70%; /* Ensure content spans the entire header area */
-    text-align: left; /* Optional: Align text to the left */
 }
 
 
