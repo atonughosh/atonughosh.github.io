@@ -12258,3 +12258,17 @@ pre .code {
     visibility: visible;
 }
 
+.header-subtitle {
+    white-space: normal; /* Allow text to wrap naturally */
+    text-align: center; /* Center the text */
+    max-width: 100%; /* Prevent restricting the width unnecessarily */
+    margin: 0 auto; /* Ensure centering in the container */
+    font-size: 1.25rem; /* Adjust size for readability */
+}
+
+@media (max-width: 768px) {
+    .header-subtitle {
+        font-size: 1rem; /* Slightly smaller text on smaller screens */
+        text-align: center; /* Center-align for smaller screens too */
+    }
+}
