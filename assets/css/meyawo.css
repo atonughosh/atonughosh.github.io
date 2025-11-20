@@ -12,6 +12,105 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
+/* === Publications & Patents Accordion — Final Visual Fix === */
+
+/* Collapsed (default) state — permanent bluish-purple */
+#publications .card {
+  background-color: #6B5EBF !important;   /* exact shade from your sample */
+  border: 2px solid #6B5EBF;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  color: #ffffff;
+  overflow: hidden;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Header link text */
+#publications .card-header a {
+  display: block;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1rem 1.25rem;
+}
+
+/* Keep purple visible always, even without hover */
+#publications .card-header {
+  background-color: transparent !important;
+  border: none;
+}
+
+/* Hover — slight lift and brighter purple */
+#publications .card:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  background-color: #7a6fe3 !important;
+}
+
+/* Expanded (open) state — light gray */
+#publications .card .collapse.show,
+#publications .card[aria-expanded="true"] .card-header a {
+  background-color: #f4f4f4 !important;
+  color: #222 !important;
+  border: 2px solid #d1d1d1;
+}
+
+/* Card body when open */
+#publications .card-body {
+  background-color: #f4f4f4;
+  color: #222;
+  border-radius: 0 0 1.5rem 1.5rem;
+  padding: 1.25rem 1.5rem;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  line-height: 1.55;
+}
+
+/* DOI and arXiv links — deep blue */
+#publications a {
+  color: #003C99;
+  text-decoration: underline;
+  font-weight: 600;
+}
+#publications a:hover {
+  color: #005ce6;
+}
+
+/* Prefix style */
+#publications ol.prefixed li::before {
+  color: #222;
+  font-weight: 700;
+}
+
+/* === Prefixed descending lists (PG/J/C/PP, etc.) === */
+ol.prefixed {
+  list-style: none;         /* hide default numbers */
+  padding-left: 0;
+  margin-left: 0;
+}
+/* === Justified alignment for publication/patent lists === */
+ol.prefixed li {
+  text-align: justify;       /* Fully justify multi-line entries */
+  text-justify: inter-word;  /* Improves spacing between words */
+  hyphens: auto;             /* Optional: smooth word breaks */
+  line-height: 1.5;          /* Improves readability */
+  margin: 0.4rem 0;
+}
+
+ol.prefixed li::before {
+  content: "[" var(--prefix) counter(list-item) "] ";
+  font-weight: 700;
+  display: inline-block;
+  min-width: 5ch;    /* adjust for better visual spacing */
+}
+
+
+
+/* Smaller screens: a touch more spacing */
+@media (max-width: 575.98px){
+  ol.prefixed li { margin: .35rem 0; }
+}
+
 @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
 :root {
   --blue: #1e549f;
@@ -12296,3 +12395,55 @@ pre .code {
 
 
 
+
+
+/* === Mobile Enhancements (added by ChatGPT) === */
+@media (max-width: 575.98px){
+  .navbar .nav-link{ padding: .5rem 1rem; }
+  .navbar .btn.nav-resume{ margin-top:.5rem; }
+  header .btn{ margin: .4rem .3rem; }
+  .btn-resume-hero{ display:inline-block; margin-left:.4rem; }
+  .section-title{ font-size:1.6rem; }
+  .card .card-header{ padding:.75rem 1rem; }
+  .card .card-body{ padding: .75rem 1rem; }
+  img{ max-width:100%; height:auto; }
+  .container{ padding-left: 1rem; padding-right: 1rem; }
+}
+
+/* Floating resume button on mobile */
+@media (max-width: 480px){
+  .resume-fab{
+    position:fixed; right:16px; bottom:16px; z-index:1050;
+    border-radius:999px; padding:.8rem 1rem; box-shadow:0 6px 16px rgba(0,0,0,.2);
+  }
+}
+/* Accordion tweaks */
+#pubAccordion .card-header{ background:#fff; cursor:pointer; }
+#pubAccordion .card{ border:1px solid rgba(0,0,0,.08); border-radius:.5rem; }
+
+/* === NAV: force visible on desktop, keep mobile collapsed === */
+@media (min-width: 992px){
+  /* Show the menu row and items from the first paint */
+  .custom-navbar .nav{
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+  .custom-navbar .nav .item{
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+  /* Hide hamburger on desktop */
+  .custom-navbar .hamburger{ display: none !important; }
+}
+
+/* Mobile: if JS toggles .menu-open, reveal the dropdown (matches your current approach) */
+@media (max-width: 991.98px){
+  .custom-navbar.menu-open .nav{
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+  }
+}
