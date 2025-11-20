@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Optional: keep repo/config stuff out of the index
+Disallow: /.github/
+Disallow: /components/
+Disallow: /CNAME   # note: no trailing slash; it's a file
+
+Sitemap: https://atonughosh.com/sitemap.xml
