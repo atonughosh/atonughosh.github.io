@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://atonughosh.com/</loc></url>
-  <url><loc>https://atonughosh.com/#about</loc></url>
-  <url><loc>https://atonughosh.com/#portfolio</loc></url>
-  <url><loc>https://atonughosh.com/#education</loc></url>
-  <url><loc>https://atonughosh.com/#publications</loc></url>
-  <url><loc>https://atonughosh.com/#contact</loc></url>
+  <url><loc>https://atonughosh.com/</loc><lastmod>2026-07-05</lastmod><priority>1.0</priority></url>
+  <url><loc>https://atonughosh.com/#about</loc><priority>0.8</priority></url>
+  <url><loc>https://atonughosh.com/#focus</loc><priority>0.7</priority></url>
+  <url><loc>https://atonughosh.com/#work</loc><priority>0.8</priority></url>
+  <url><loc>https://atonughosh.com/#research</loc><priority>0.8</priority></url>
+  <url><loc>https://atonughosh.com/#experience</loc><priority>0.7</priority></url>
+  <url><loc>https://atonughosh.com/#recognition</loc><priority>0.6</priority></url>
+  <url><loc>https://atonughosh.com/#contact</loc><priority>0.7</priority></url>
 </urlset>

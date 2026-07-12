@@ -1,374 +1,792 @@
-<!DOCTYPE html >
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Primary Meta -->
-<title>Atonu Ghosh — IoT, Edge & Industrial Digital Transformation Expert</title>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta name="description" content="IoT & Edge expert (PhD, IIT Kharagpur) working at Samsung R&D Institute India - Bangalore. I design secure, low-power, industry-grade systems (LoRa, IIoT, AIoT) and lead digital transformation. Consulting & collaborations." />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Atonu Ghosh — IoT, Edge &amp; LPWAN Researcher · IIT Kharagpur</title>
+<meta name="description" content="Atonu Ghosh is a PhD researcher (IIT Kharagpur) and applied systems engineer building secure, low-power IoT: HTTP and TLS over LoRa, edge AI for industrial monitoring, and systems deployed in steel plants and water networks. Currently a Research Intern at Samsung R&D Institute India, Bangalore." />
+<meta name="author" content="Atonu Ghosh" />
+<meta name="keywords" content="Atonu Ghosh, IoT, Edge Computing, LPWAN, LoRa, Industrial IoT, IIoT, Edge AI, TinyML, HTTP over LoRa, TLS over LoRa, condition monitoring, IIT Kharagpur, Samsung R&D, cyber-physical systems, PhD" />
 <link rel="canonical" href="https://atonughosh.com/" />
 
 <!-- Robots -->
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
 
-<!-- Open Graph (Facebook, LinkedIn, etc.) -->
+<!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Atonu Ghosh" />
-<meta property="og:title" content="Atonu Ghosh — IoT, Edge & Industrial Digital Transformation Expert" />
-<meta property="og:description" content="IoT & Edge expert (PhD, IIT Kharagpur) working at Samsung R&D Institute India - Bangalore. I design secure, low-power, industry-grade systems (LoRa, IIoT, AIoT). Consulting & collaborations." />
+<meta property="og:title" content="Atonu Ghosh — IoT, Edge &amp; LPWAN Systems Researcher" />
+<meta property="og:description" content="PhD researcher and applied systems engineer. HTTP/TLS over LoRa, edge AI for industrial monitoring, and IoT deployed in steel plants and water networks." />
 <meta property="og:url" content="https://atonughosh.com/" />
 <meta property="og:image" content="https://atonughosh.com/assets/og/atonu-cover.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:locale" content="en_IN" />
 
-<!-- Twitter Card -->
+<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Atonu Ghosh — IoT, Edge & Industrial Digital Transformation Expert" />
-<meta name="twitter:description" content="IoT & Edge expert (PhD, IIT Kharagpur) working at Samsung R&D Institute India - Bangalore. Secure, low-power IIoT systems (LoRa, AIoT). Consulting & collaborations." />
+<meta name="twitter:title" content="Atonu Ghosh — IoT, Edge &amp; LPWAN Systems Researcher" />
+<meta name="twitter:description" content="PhD researcher building secure, low-power IoT: HTTP/TLS over LoRa, edge AI, and systems in production." />
 <meta name="twitter:image" content="https://atonughosh.com/assets/og/atonu-cover.jpg" />
-<meta name="twitter:site" content="@YOUR_TWITTER_HANDLE" />
 
-<!-- Favicons -->
-<link rel="icon" href="/favicon.ico" sizes="any" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<link rel="manifest" href="/site.webmanifest" />
-<meta name="theme-color" content="#6B5EBF" />
+<!-- Icons -->
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
-<!-- Alternate languages (add if you have localized pages) -->
-<!-- <link rel="alternate" href="https://atonughosh.com/" hreflang="en" /> -->
-<!-- <link rel="alternate" href="https://atonughosh.com/hi/" hreflang="hi" /> -->
+<!-- Identity (rel=me) — ties this site to verified profiles -->
+<link rel="me" href="https://www.linkedin.com/in/atonughoshcse/" />
+<link rel="me" href="https://github.com/atonughosh" />
+<link rel="me" href="https://scholar.google.com/citations?user=ULCTZG4AAAAJ&hl=en" />
+<link rel="manifest" href="site.webmanifest" />
+<meta name="theme-color" content="#F4F6F5" />
 
-<!-- JSON-LD: Website + Person -->
+<!-- Set theme before paint (no flash) -->
+<script>
+(function(){try{var m=localStorage.getItem('theme');var d=m?m==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;var t=d?'dark':'light';document.documentElement.setAttribute('data-theme',t);var mc=document.querySelector('meta[name="theme-color"]');if(mc)mc.setAttribute('content',d?'#0B1113':'#F4F6F5');}catch(e){document.documentElement.setAttribute('data-theme','light');}})();
+</script>
+
+<!-- Fonts (self-hosted, loaded via @font-face in style.css) -->
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<!-- JSON-LD: Person + Website -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebSite",
-      "name": "Atonu Ghosh",
+      "@type": "ProfilePage",
+      "@id": "https://atonughosh.com/#profilepage",
       "url": "https://atonughosh.com/",
-      "inLanguage": "en",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://atonughosh.com/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "name": "Atonu Ghosh — IoT, Edge & LPWAN Systems Researcher",
+      "isPartOf": { "@id": "https://atonughosh.com/#website" },
+      "about": { "@id": "https://atonughosh.com/#person" },
+      "mainEntity": { "@id": "https://atonughosh.com/#person" },
+      "primaryImageOfPage": { "@id": "https://atonughosh.com/#primaryimage" },
+      "dateModified": "2026-07-05",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://atonughosh.com/#website",
+      "url": "https://atonughosh.com/",
+      "name": "Atonu Ghosh",
+      "description": "Personal site of Atonu Ghosh — IoT, Edge Computing and LPWAN systems researcher.",
+      "publisher": { "@id": "https://atonughosh.com/#person" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://atonughosh.com/#primaryimage",
+      "url": "https://atonughosh.com/assets/img/atonu.jpg",
+      "contentUrl": "https://atonughosh.com/assets/img/atonu.jpg",
+      "width": 1070,
+      "height": 1070,
+      "caption": "Atonu Ghosh"
     },
     {
       "@type": "Person",
+      "@id": "https://atonughosh.com/#person",
       "name": "Atonu Ghosh",
+      "givenName": "Atonu",
+      "familyName": "Ghosh",
+      "alternateName": ["Atanu Ghosh", "Atonu Ghosh IIT Kharagpur", "Atonu Ghosh SWAN Lab"],
+      "description": "Atonu Ghosh is an IoT, Edge Computing and LPWAN systems researcher — a Ph.D. scholar at IIT Kharagpur (SWAN Lab) and Research Intern at Samsung R&D Institute India, Bangalore, with 15 patents and peer-reviewed work on HTTP/TLS over LoRa, LoRa MIMO and edge AI for industrial monitoring.",
       "url": "https://atonughosh.com/",
-      "image": "https://atonughosh.com/assets/og/atonu-profile.jpg",
-      "jobTitle": "IoT, IIoT, Low Power Networks, & Edge Computing Expert",
-      "affiliation": "IIT Kharagpur",
-      "alumniOf": "Indian Institute of Technology Kharagpur",
-      "description": "PhD Research Scholar specializing in IoT, Edge, LoRa, LPWAN, IIoT, and Digital Transformation. Research Intern at Samsung R&D Institute India - Bangalore",
+      "image": { "@id": "https://atonughosh.com/#primaryimage" },
+      "mainEntityOfPage": { "@id": "https://atonughosh.com/#profilepage" },
+      "jobTitle": ["IoT, Edge & LPWAN Systems Researcher", "Ph.D. Research Scholar", "Research Intern"],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Computer Science Researcher",
+        "occupationalCategory": "Computer and Information Research"
+      },
+      "email": "mailto:atonughosh@outlook.com",
+      "telephone": "+91-9775517009",
+      "nationality": { "@type": "Country", "name": "India" },
+      "worksFor": [
+        { "@type": "Organization", "name": "Samsung R&D Institute India - Bangalore", "url": "https://research.samsung.com/sri-b" },
+        { "@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Kharagpur", "sameAs": "https://en.wikipedia.org/wiki/IIT_Kharagpur", "url": "https://www.iitkgp.ac.in/" }
+      ],
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Indian Institute of Technology Kharagpur",
+        "sameAs": "https://en.wikipedia.org/wiki/IIT_Kharagpur",
+        "url": "https://www.iitkgp.ac.in/"
+      },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Kharagpur", "sameAs": "https://en.wikipedia.org/wiki/IIT_Kharagpur", "url": "https://www.iitkgp.ac.in/" },
+        { "@type": "CollegeOrUniversity", "name": "Maulana Abul Kalam Azad University of Technology (MAKAUT)" },
+        { "@type": "CollegeOrUniversity", "name": "Institute of Engineering and Management, Kolkata" }
+      ],
+      "knowsAbout": ["Internet of Things","Edge Computing","On-Device AI","LPWAN","LoRa","Industrial IoT","TinyML","Edge AI","Cyber-Physical Systems","Embedded Systems","Wireless Sensor Networks","TLS over LoRa","Condition Monitoring"],
+      "award": "Qualcomm Innovation Fellowship Finalist (2024)",
+      "workLocation": {
+        "@type": "Place",
+        "address": { "@type": "PostalAddress", "addressLocality": "Bangalore", "addressRegion": "Karnataka", "addressCountry": "IN" }
+      },
       "sameAs": [
         "https://www.linkedin.com/in/atonughoshcse",
         "https://scholar.google.com/citations?user=ULCTZG4AAAAJ&hl=en",
-        "https://github.com/atonughosh"
+        "https://github.com/atonughosh",
+        "https://www.facebook.com/atonu.ghosh"
       ]
     }
   ]
 }
 </script>
-
-<!-- <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-<meta content="PhD Research Scholar at IIT Kharagpur specializing in IoT, Edge Computing, Industry 4.0/5.0, Low Power Networks, Digital Transformation, Full Stack IoT, and IoT Hardware. Available for IoT consulting, freelancing, teaching, and research collaborations worldwide." name="description"/>
-<meta content="IoT Consultant, Edge Computing Specialist, Industry 4.0, Freelance IoT Architect, Low Power IoT Networks, Industrial IoT Research, Online IoT Trainer, Lightweight Blockchain, LoRa Networks, PhD IIT Kharagpur, Atonu Ghosh Portfolio, IoT Freelancing Jobs, IoT Training Workshops, Digital Transformation, Digital Strategy Consultant, Digital Transformation Expert, Business Process Automation, Industry 5.0 Digital Transformation, Full Stack IoT, IoT Hardware Development, IoT Hardware Specialist, IoT End-to-End Solutions" name="keywords"/>
-<meta content="Atonu Ghosh" name="author"/> -->
-<title>Atonu Ghosh | IoT Expert | PhD Scholar | Freelance Consultant | Digital Transformation</title>
-<!-- font icons -->
-<link href="assets/vendors/themify-icons/css/themify-icons.css" rel="stylesheet"/>
-<!-- Bootstrap + Meyawo main styles -->
-<link href="assets/css/meyawo.css" rel="stylesheet"/>
 </head>
-<body data-offset="40" data-spy="scroll" data-target=".navbar" id="home">
-<!-- Page Navbar -->
+<body id="home">
 
-<nav class="custom-navbar" data-offset-top="20" data-spy="affix">
-  <div class="container">
-    <a class="logo invisible" href="#home">Atonu Ghosh</a>
+<a href="#about" class="skip-link">Skip to content</a>
 
-    <!-- add style="display:flex" -->
-   <ul class="nav" id="primary-menu" role="menubar">
-      <li class="item"><a class="link" href="#home" role="menuitem">Home</a></li>
-      <li class="item"><a class="link" href="#about" role="menuitem">About</a></li>
-      <li class="item"><a class="link" href="#publications" role="menuitem">Portfolio</a></li>
-      <li class="item"><a class="link" href="#education" role="menuitem">Education</a></li>
-      <li class="item"><a class="link" href="#contact" role="menuitem">Contact</a></li>
-    </ul>
-
-    <a class="hamburger hamburger--elastic" href="javascript:void(0)" id="nav-toggle"
-       aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="hamburger-box"><div class="hamburger-inner"></div></div>
+<!-- ============================ NAV ============================ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#home" aria-label="Atonu Ghosh — home">
+      <svg class="brand__glyph" viewBox="0 0 64 64" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="3">
+          <circle cx="32" cy="32" r="9"/><circle cx="32" cy="32" r="18" opacity=".55"/><circle cx="32" cy="32" r="27" opacity=".25"/>
+        </g>
+        <circle cx="32" cy="32" r="4.6" fill="currentColor"/>
+      </svg>
+      <span>Atonu Ghosh<br><small>IoT · Edge · LPWAN</small></span>
     </a>
+
+    <nav aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="#about" data-spy>About</a></li>
+        <li><a href="#focus" data-spy>Focus</a></li>
+        <li><a href="#work" data-spy>Work</a></li>
+        <li><a href="#research" data-spy>Publications</a></li>
+        <li><a href="#experience" data-spy>Experience</a></li>
+        <li><a href="#contact" data-spy>Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__right">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8L6 18M18 6l1.8-1.8"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.7 6.7 0 0 0 10.5 10.5z"/></svg>
+      </button>
+      <a href="Atonu_Ghosh_PhD_CS_IIT_Kharagpur_India_CV.pdf" class="btn btn--primary btn--sm nav__cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+        CV
+      </a>
+      <button id="hamburger" class="hamburger" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"><span></span></button>
+    </div>
   </div>
-</nav>
 
+  <ul class="mobile-menu wrap" id="mobile-menu">
+    <li><a href="#about" data-spy>About</a></li>
+    <li><a href="#focus" data-spy>Focus</a></li>
+    <li><a href="#work" data-spy>Work</a></li>
+    <li><a href="#research" data-spy>Publications &amp; Patents</a></li>
+    <li><a href="#experience" data-spy>Experience</a></li>
+    <li><a href="#recognition" data-spy>Recognition</a></li>
+    <li><a href="#contact" data-spy>Contact</a></li>
+    <li><a href="Atonu_Ghosh_CV.pdf" class="btn btn--primary">Download CV</a></li>
+  </ul>
+</header>
 
+<!-- ============================ HERO ============================ -->
+<section class="hero" aria-label="Introduction">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <span class="hero__status reveal">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Final-semester PhD · open to 2026 research &amp; industry roles
+        </span>
+        <p class="eyebrow hero__eyebrow reveal">Ph.D. Research Scholar · SWAN Lab</p>
+        <h1 class="hero__name reveal">Atonu Ghosh</h1>
+        <p class="hero__role reveal">Dedicated to advancing next-generation IoT, Edge Computing, and Low Power Network research — translating these innovations into scalable, human-centric technologies that create <b>tangible societal impact</b>.</p>
 
+        <div class="hero__affil reveal">
+          <a class="hero__affil-chip hero__affil-chip--primary" href="https://www.iitkgp.ac.in/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 4H3l9-4z"/><path d="M4 10h16M5 21V10M9.5 21V10M14.5 21V10M19 21V10M3 21h18"/></svg>
+            <span><small>Ph.D. Research Scholar</small><b>IIT Kharagpur</b></span>
+          </a>
+          <a class="hero__affil-chip" href="https://research.samsung.com/sri-b" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg>
+            <span><small>Former Research Intern</small><b>Samsung R&amp;D</b></span>
+          </a>
+        </div>
 
+        <p class="hero__desc reveal">Recent work spans HTTP and TLS over LoRa and condition monitoring systems deployed in steel plant and municipal water networks. Led several research and consulting projects including the ones sponsored by the Government of India.</p>
 
-<!-- <nav class="custom-navbar" data-offset-top="20" data-spy="affix">
-<div class="container">
-<a class="logo invisible" href="#">Atonu Ghosh</a>
-<ul class="nav">
-<li class="item"><a class="link" href="#home">Home</a></li>
-<li class="item"><a class="link" href="#about">About</a></li>
-<li class="item"><a class="link" href="#portfolio">Portfolio</a></li>
-<li class="item"><a class="link" href="#education">Education</a></li>
-<li class="item"><a class="link" href="#contact">Contact</a></li>
-</ul>
-<a class="hamburger hamburger--elastic" href="javascript:void(0)" id="nav-toggle">
-<div class="hamburger-box">
-<div class="hamburger-inner"></div>
-</div>
-</a>
-</div>
-</nav> -->
-<!-- Page Header -->
-<header class="header" id="home">
-<div class="overlay"></div>
-<div class="header-content container">
-<h1 class="header-title">
-<span class="up">Hi!</span>
-<span class="down">I am Atonu Ghosh</span>
-</h1>
-<p class="header-subtitle seo-hidden">Ph.D. Research Scholar | IoT Architect | Freelance Consultant | Digital Transformation Specialist</p>
-<p class="header-subtitle visible"><small>Ph.D. Research Scholar, IIT Kharagpur Specializing in IoT, Edge Computing, and Digital Transformation. Presently Working as Research Intern at Samsung Research, Bangalore.</small></p>
-<button class="btn btn-primary"><a href="Atonu_PhD_CS_IIT_CV.pdf">Download CV</a></button>
-<button class="btn btn-primary"><a href="Atonu_PhD_CS_IIT_Resume.pdf">Download Resume</a></button>
-</div>
-<a class="" download="Atonu_CV.pdf" href="Atonu_CV.pdf"></a></header>
-<!-- About Section -->
-<section class="section pt-0" id="about">
-<div class="container text-center">
-<div class="about">
-<div class="about-img-holder">
-<img alt="Atonu Ghosh" class="about-img" src="assets/imgs/atonu.jpg"/>
-</div>
-<div class="about-caption">
-<p class="section-subtitle">Who Am I?</p>
-<h2 class="section-title mb-3">About Me</h2>
-<p>
-                        I am a Ph.D. Research Scholar at IIT Kharagpur and a Research Intern at Samsung R&D Institute India - Bangalore, specializing in Internet of Things (IoT), Edge Computing, Industrial IoT (IIoT), Industry 4.0/5.0, Low Power Networks, Digital Transformation, Full Stack IoT, and IoT Hardware. With expertise in IoT system design, research, digital strategy, and training, I am available for consulting, teaching, and freelancing opportunities worldwide.
-                    </p>
-<a href="https://scholar.google.com/citations?user=ULCTZG4AAAAJ">
-<button class="btn-rounded btn btn-outline-primary mt-4">My Research Articles</button>
-</a>
-</div>
-</div>
-</div>
+        <div class="hero__cta reveal">
+          <a href="#contact" class="btn btn--primary">
+            Get in touch
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m0 0l-6-6m6 6l-6 6"/></svg>
+          </a>
+          <a href="Atonu_Ghosh_PhD_CS_IIT_Kharagpur_India_CV.pdf" class="btn btn--ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+            Download CV
+          </a>
+          <a href="https://scholar.google.com/citations?user=ULCTZG4AAAAJ&hl=en" class="btn btn--ghost" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3L2 8.5 12 14l10-5.5L12 3z"/><path d="M6 10.5V16c0 1.2 2.7 2.5 6 2.5s6-1.3 6-2.5v-5.5"/></svg>
+            Google Scholar
+          </a>
+        </div>
+
+        <div class="hero__metrics reveal" role="list" aria-label="Highlights">
+          <div class="metric" role="listitem">
+            <div class="metric__num">16</div>
+            <div class="metric__label">Patents · 3 granted</div>
+          </div>
+          <div class="metric" role="listitem">
+            <div class="metric__num">12</div>
+            <div class="metric__label">Peer-reviewed papers</div>
+          </div>
+          <div class="metric" role="listitem">
+            <div class="metric__num">4</div>
+            <div class="metric__label">Systems in production</div>
+          </div>
+          <div class="metric" role="listitem">
+            <div class="metric__num">6<span class="plus">+</span></div>
+            <div class="metric__label">Years research &amp; deployment</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__figure reveal">
+        <div class="hero__viz" aria-hidden="true">
+          <span class="hero__ring hero__ring--3"></span>
+          <span class="hero__ring hero__ring--2"></span>
+          <span class="hero__ring hero__ring--1"></span>
+          <span class="hero__orbit hero__orbit--1"><i class="hero__node"></i></span>
+          <span class="hero__orbit hero__orbit--2"><i class="hero__node hero__node--sm"></i></span>
+        </div>
+        <img class="hero__photo" src="assets/img/atonu.jpg" width="640" height="640"
+             alt="Atonu Ghosh, IoT and edge systems researcher" loading="eager" />
+        <span class="hero__figtag"><b>TX</b> &nbsp;IoT · Edge · LPWAN</span>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Services Section -->
-<section class="section" id="service">
-<div class="container text-center">
-<p class="section-subtitle">What I Do</p>
-<h6 class="section-title mb-6">Learning and Innovating Continuously</h6>
-<div class="row">
-<div class="col-md-6 col-lg-3">
-<div class="service-card">
-<div class="body">
-<img alt="Research" class="icon" src="assets/imgs/pencil-case.svg"/>
-<h6 class="title">Research</h6>
-<p class="subtitle">IoT, Edge Computing, Industry 4.0, Low Power Networks.</p>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-3">
-<div class="service-card">
-<div class="body">
-<img alt="IoT Architect" class="icon" src="assets/imgs/responsive.svg"/>
-<h6 class="title">IoT Architect</h6>
-<p class="subtitle">Designing IoT solutions across industries.</p>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-3">
-<div class="service-card">
-<div class="body">
-<img alt="IoT Hardware Development" class="icon" src="assets/imgs/toolbox.svg"/>
-<h6 class="title">IoT Hardware</h6>
-<p class="subtitle">Developing custom IoT hardware solutions.</p>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-3">
-<div class="service-card">
-<div class="body">
-<img alt="Digital Transformation" class="icon" src="assets/imgs/analytics.svg"/>
-<h6 class="title">Digital Transformation</h6>
-<p class="subtitle">Driving strategic digital change and process automation.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+
+<!-- ===================== RESEARCH INTERESTS ==================== -->
+<aside class="interests" aria-label="Research interests">
+  <div class="wrap interests__inner">
+    <span class="interests__label">Research Interests</span>
+    <ul class="interests__list">
+      <li class="interests__item">Internet of Things<span>IoT</span></li>
+      <li class="interests__item">Edge Computing &amp; On-Device AI</li>
+      <li class="interests__item">LPWAN &amp; LoRa</li>
+    </ul>
+  </div>
+</aside>
+
+<!-- ============================ ABOUT ========================== -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="about__grid">
+      <div class="about__intro reveal">
+        <p class="eyebrow"><span class="idx">01</span> — About</p>
+        <h2 class="section-title">Systems engineering<br>where hardware meets the network.</h2>
+      </div>
+
+      <div class="about__body">
+        <div class="about__prose reveal">
+          <p>I'm a final-semester PhD scholar in Computer Science &amp; Engineering at <strong>IIT Kharagpur</strong>, in the Smart Wireless Applications &amp; Networking (SWAN) Lab under <strong>Prof. Sudip Misra</strong>, and a former Research Intern at <strong>Samsung R&amp;D Institute India, Bangalore</strong>. My work lives in the resource-constrained middle where embedded hardware, networks and machine learning meet.</p>
+          <p>Over 6+ years I've taken systems from breadboard to production: <strong>HTTP and a full TLS 1.3 handshake carried over LoRa</strong> for remote and ad-hoc networks, a <strong>4×4 and 8x8 LoRa MIMO</strong> testbed for higher throughput, <strong>condition monitoring</strong> for overhead cranes and rotating machinery, and a <strong>lightweight blockchain</strong> running on a microcontroller. Several are patented and some are in production.</p>
+          <p>I've led small teams on consulting and research projects for <strong>Tata Steel</strong>, <strong>Bokaro Steel Plant</strong>, <strong>Haldia Water Services</strong>, and <strong>CPHEEO</strong> resulting in end-to-end systems and their field validation. My aim always has been and still remains to build systems that are reliable, low-power, and genuinely useful to the people who depend on them.</p>
+        </div>
+
+        <aside class="about__side reveal">
+          <div class="about__card">
+            <h3>At a glance</h3>
+            <dl>
+          
+              <div class="fact"><dt>Now</dt><dd>PhD, IIT Kharagpur</dd></div>
+              <div class="fact"><dt>Advisor</dt><dd>Prof. Sudip Misra</dd></div>
+              <div class="fact"><dt>Focus</dt><dd>IoT · Edge · LPWAN</dd></div>
+              <div class="fact"><dt>Recognition</dt><dd>Qualcomm Innovation Fellowship Finalist</dd></div>
+              <div class="fact"><dt>Last Experience</dt><dd>Research Intern, Samsung R&amp;D</dd></div>
+              <div class="fact"><dt>Based in</dt><dd>Kharagpur, India</dd></div>
+            </dl>
+            <div class="about__links">
+              <a class="iconlink" href="https://github.com/atonughosh" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5A10.5 10.5 0 0 0 8.68 22c.53.1.72-.23.72-.5v-1.9c-2.93.64-3.55-1.25-3.55-1.25-.48-1.22-1.17-1.55-1.17-1.55-.96-.65.07-.64.07-.64 1.06.08 1.62 1.09 1.62 1.09.94 1.62 2.47 1.15 3.07.88.1-.68.37-1.15.67-1.42-2.34-.27-4.8-1.17-4.8-5.2 0-1.15.41-2.09 1.09-2.83-.11-.27-.47-1.34.1-2.8 0 0 .89-.28 2.9 1.08a10 10 0 0 1 5.28 0c2-1.36 2.89-1.08 2.89-1.08.58 1.46.22 2.53.11 2.8.68.74 1.09 1.68 1.09 2.83 0 4.04-2.47 4.93-4.82 5.19.38.33.72.97.72 1.96v2.9c0 .28.19.61.73.5A10.5 10.5 0 0 0 12 1.5z"/></svg>
+              </a>
+              <a class="iconlink" href="https://www.linkedin.com/in/atonughoshcse/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C21 8.65 22 10.9 22 14v7h-4v-6.2c0-1.48-.03-3.4-2.07-3.4-2.07 0-2.39 1.62-2.39 3.29V21h-4z"/></svg>
+              </a>
+              <a class="iconlink" href="https://scholar.google.com/citations?user=ULCTZG4AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3L2 8.5 12 14l10-5.5L12 3z"/><path d="M6 10.5V16c0 1.2 2.7 2.5 6 2.5s6-1.3 6-2.5v-5.5"/></svg>
+              </a>
+              <a class="iconlink" href="mailto:atonughosh@outlook.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 5.5L20 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Portfolio Section -->
-<!-- <section class="section" id="portfolio">
-<div class="container text-center">
-<p class="section-subtitle">What I Did</p>
-<h6 class="section-title mb-6">Portfolio</h6>
-<div class="row">
-<div class="col-md-4">
-<a class="portfolio-card" href="#">
-<img alt="Publications" class="portfolio-card-img" src="assets/imgs/publi1.jpg"/>
-<span class="portfolio-card-overlay">
-<span class="portfolio-card-caption">
-<h4>Publications</h4>
-<p class="font-weight-normal"><b>8</b></p>
-</span>
-</span>
-</a>
-</div>
-<div class="col-md-4">
-<a class="portfolio-card" href="#">
-<img alt="Patents" class="portfolio-card-img" src="assets/imgs/patent1.png"/>
-<span class="portfolio-card-overlay">
-<span class="portfolio-card-caption">
-<h4>Patents</h4>
-<p class="font-weight-normal"><b>10</b></p>
-</span>
-</span>
-</a>
-</div>
-<div class="col-md-4">
-<a class="portfolio-card" href="#">
-<img alt="Books" class="portfolio-card-img" src="assets/imgs/book1.jpg"/>
-<span class="portfolio-card-overlay">
-<span class="portfolio-card-caption">
-<h4>Books</h4>
-<p class="font-weight-normal"><b>0</b></p>
-</span>
-</span>
-</a>
-</div>
-</div>
-</div>
-</section> -->
-<!-- Contact Section -->
-<section class="section" id="publications"><div class="container text-center"><h2 class="section-title mb-4">Publications &amp; Patents</h2><div id="pubAccordion"><div class="card text-left mb-2"><div class="card-header" id="h-patents-granted"><h5 class="mb-0"><a aria-controls="c-patents-granted" aria-expanded="false" class="d-block stretched-link" data-toggle="collapse" href="#c-patents-granted">Patents (Granted)</a></h5></div><div aria-labelledby="h-patents-granted" class="collapse" data-parent="#pubAccordion" id="c-patents-granted"><div class="card-body">
-<ol class="prefixed mb-0" reversed style="--prefix:'PG';">
-  <li> <b>Atonu Ghosh</b>, Biswajit Ghosh, Ruelia Saha, Sudip Misra, and Arijit Roy, <em>System for Real Time Intrusion Detection, Actuation and Alert and Method Thereof</em>, Indian Patent No. 566326, May 16, 2025.</li>
-  <li> Subhas Chandra Misra, Debanjan Das, Sudip Misra, Venkanna Udutalapally, <b>Atonu Ghosh</b>, and Tanushree Pan, <em>Wireless Network Device for Wireless Communication with User Devices in a Wireless Communication Network</em>, Indian Patent No. 539308, May 27, 2024.</li>
-  <li> Subhas Chandra Misra, Debanjan Das, Venkanna Udutalapally, Sudip Misra, and <b>Atonu Ghosh</b>, <em>Blockchain-Enabled IoT System and Method for Securing Real Time Data in a Microcontroller-Based Blockchain Network</em>, Indian Patent No. 529261, Mar 20, 2024.</li>
-</ol>
 
+<!-- ============================ FOCUS ========================== -->
+<section class="section section--alt" id="focus">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow"><span class="idx">02</span> — What I work on</p>
+      <h2 class="section-title">Six problems I keep coming back to.</h2>
+      <p class="section-lead">Different projects, one throughline: making capable systems run on tiny, far-flung, power-starved hardware — and keeping them secure and maintainable once they ship.</p>
+    </div>
 
-</div></div></div><div class="card text-left mb-2"><div class="card-header" id="h-patents-filed"><h5 class="mb-0"><a aria-controls="c-patents-filed" aria-expanded="false" class="d-block stretched-link" data-toggle="collapse" href="#c-patents-filed">Patents (Filed)</a></h5></div><div aria-labelledby="h-patents-filed" class="collapse" data-parent="#pubAccordion" id="c-patents-filed"><div class="card-body">
-<ol class="prefixed mb-0" reversed style="--prefix:'PF';">
-  <li> Sudip Misra, <b>Atonu Ghosh</b>, Bontalakoti Aditya, Kumarjit Ray, and Rajdeep Ghosh, <em>An Intelligent Liquid-Level Sensing and Pump Control System</em>, Indian Patent File No. 202531098034, Oct 10, 2025.</li>
-  <li> Sudip Misra, <b>Atonu Ghosh</b>, Biswajit Ghosh, Swaraj Lahiri, Bharat Bhushan, Subrata Ray, and Sonali Pan, <em>Embedded System and Method for Condition Monitoring of Electric Overhead Travelling (EOT) Cranes</em>, File No. 202531033456, Apr 4, 2025.</li>
-  <li> Aparesh Mahapatra, Biswajit Ghosh, <b>Atonu Ghosh</b>, Suryansh Sharma, Debayan Biswas, Sudip Misra, Partha Sarathi Ghoshal, and Manoj Kumar Tiwari, <em>IoT-Enabled Smart Hardware System with Edge Intelligence for Rapid Leak Detection in Water Distribution Networks</em>, File No. 202531028121, Mar 25, 2025.</li>
-  <li> <b>Atonu Ghosh</b> and Sudip Misra, <em>LoRaNext: Embedded System and Method for Decentralized HTTP Communication Over LoRa</em>, File No. 202531024600, Mar 19, 2025.</li>
-  <li> <b>Atonu Ghosh</b>, Sudip Misra, and Sharath Chandan, <em>Long Range Multiple Input Multiple Output System for High Throughput Communication</em>, File No. 202431094880, Dec 2, 2024.</li>
-  <li> Kumarjit Ray, <b>Atonu Ghosh</b>, Biswajit Ghosh, and Sudip Misra, <em>Universal Software-Defined LoRa Gateway Based Network System for Remote Programming and Management of Network Functions</em>, File No. 202431046371, Jun 15, 2024.</li>
-  <li> Ruelia Saha, <b>Atonu Ghosh</b>, and Sudip Misra, <em>Confidant: An Internet of Things-Based System and Method for Mental Health Monitoring and Support</em>, File No. 202431034007, Apr 29, 2024.</li>
-  <li> Biswajit Ghosh, <b>Atonu Ghosh</b>, and Sudip Misra, <em>An Edge Intelligence Based Programmable Logic Controller</em>, File No. 202431032957, Apr 25, 2024.</li>
-  <li> <b>Atonu Ghosh</b>, Sudip Misra, Arijit Roy, and Anandarup Mukherjee, <em>A System for Remote Monitoring, Actuation and Data Prediction</em>, File No. 202231040824, Jul 17, 2022.</li>
-  <li> Sudip Misra, Saswati Pal, and <b>Atonu Ghosh</b>, <em>Modularized IoT-Based On-Demand Ambulatory Hospital Recommender System</em>, File No. 202231008007, Feb 15, 2022.</li>
-  <li> Sudip Misra, Debanjan Das, Venkanna Udutalapally, <b>Atonu Ghosh</b>, and Pallav Kumar Deb, <em>A Secured Edge-Based Automated Power Control and Communication System for Legacy IoT Infrastructures</em>, File No. 202131038016, Aug 23, 2021.</li>
-</ol>
+    <div class="focus-grid reveal-stagger">
+      <article class="fcard">
+        <div class="fcard__icn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 12v.01"/><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7"/><path d="M5.5 5.5a9 9 0 0 0 0 13M18.5 5.5a9 9 0 0 1 0 13"/></svg></div>
+        <h3>LPWAN &amp; LoRa Systems</h3>
+        <p>Long-range, low-power links that carry more than telemetry — HTTP and TLS over LoRa, message handling, interference management, and MIMO for throughput.</p>
+        <div class="fcard__tags"><span class="tag">LoRa</span><span class="tag">RFM95W</span><span class="tag">SX1262</span><span class="tag">FHSS</span><span class="tag">TLS 1.3</span></div>
+      </article>
 
-</div></div></div><div class="card text-left mb-2"><div class="card-header" id="h-journals"><h5 class="mb-0"><a aria-controls="c-journals" aria-expanded="false" class="d-block stretched-link" data-toggle="collapse" href="#c-journals">Journal Papers</a></h5></div><div aria-labelledby="h-journals" class="collapse" data-parent="#pubAccordion" id="c-journals"><div class="card-body">
+      <article class="fcard">
+        <div class="fcard__icn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="8" height="8" rx="1.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2 2M17.5 17.5l2 2M19.5 4.5l-2 2M6.5 17.5l-2 2"/></svg></div>
+        <h3>Edge Systems</h3>
+        <p>Running AI inference on the edge. Staged model deployment for constrained devices on and single-board computers instead of relying on the Cloud to avoid latency and ensure security.</p>
+        <div class="fcard__tags"><span class="tag">YOLO</span><span class="tag">Edge ML</span><span class="tag">ESP32</span><span class="tag">Staged deploy</span></div>
+      </article>
 
-<ol class="prefixed mb-0" reversed style="--prefix:'J';">
-  <li> <b>Atonu Ghosh</b>, Sudip Misra, Venkanna Udutalapally, and Debanjan Das, <em>Loraute: Routing messages in backhaul LoRa networks for underserved regions</em>, <strong>IEEE Internet of Things Journal</strong>, vol. 10, pp. 19964–19971, 2023. DOI: <a href="https://doi.org/10.1109/JIOT.2023.3281941">10.1109/JIOT.2023.3281941</a>.</li>
-  <li> <b>Atonu Ghosh</b>, Sudip Misra, and Venkanna Udutalapally, <em>Multiobjective optimization and sensor correlation framework for IoT data validation</em>, <strong>IEEE Sensors Journal</strong>, vol. 22, pp. 23581–23589, 2022. DOI: <a href="https://doi.org/10.1109/JSEN.2022.3215993">10.1109/JSEN.2022.3215993</a>.</li>
-  <li> <b>Atonu Ghosh</b>, Ruelia Saha, and Sudip Misra, <em>Persistent service provisioning framework for IoMT-based emergency mobile healthcare units</em>, <strong>IEEE Journal of Biomedical and Health Informatics</strong>, vol. 26, pp. 5851–5858, 2022. DOI: <a href="https://doi.org/10.1109/JBHI.2022.3172624">10.1109/JBHI.2022.3172624</a>.</li>
-  <li> <b>Atonu Ghosh</b>, Anandarup Mukherjee, and Sudip Misra, <em>SEGA: Secured Edge Gateway Microservices Architecture for IIoT-based Machine Monitoring</em>, <strong>IEEE Transactions on Industrial Informatics</strong>, vol. 18, pp. 1949–1956, 2021. DOI: <a href="https://doi.org/10.1109/TII.2021.3102158">10.1109/TII.2021.3102158</a>.</li>
-</ol>
+      <article class="fcard">
+        <div class="fcard__icn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M4 21V10l6-3v3l6-3v14M8 21v-4h4v4"/></svg></div>
+        <h3>Industrial IoT &amp; Condition Monitoring</h3>
+        <p>Retrofitting legacy plant equipment with modern sensing — vibration, temperature, electrical and gas monitoring wired into Industry 4.0/5.0 dashboards.</p>
+        <div class="fcard__tags"><span class="tag">MQTT</span><span class="tag">Modbus</span><span class="tag">PLC</span><span class="tag">Grafana</span></div>
+      </article>
 
-</div></div></div><div class="card text-left mb-2"><div class="card-header" id="h-conferences"><h5 class="mb-0"><a aria-controls="c-conferences" aria-expanded="false" class="d-block stretched-link" data-toggle="collapse" href="#c-conferences">Conference Papers</a></h5></div><div aria-labelledby="h-conferences" class="collapse" data-parent="#pubAccordion" id="c-conferences"><div class="card-body">
+      <article class="fcard">
+        <div class="fcard__icn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 8.5-8 11-4.6-2.5-8-6-8-11V5l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Secure Cyber-Physical Systems</h3>
+        <p>Trust at the edge — end-to-end TLS over constrained links, real-time intrusion detection and actuation, and tamper-proof logging via lightweight on-device blockchain.</p>
+        <div class="fcard__tags"><span class="tag">TLS 1.3</span><span class="tag">Blockchain</span><span class="tag">IDS</span></div>
+      </article>
 
-<ol class="prefixed mb-0" reversed style="--prefix:'C';">
-  <li> <b>Atonu Ghosh</b>, Debashis De, and Koushik Majumder, <em>A Systematic Review of Log-Based Cloud Forensics</em>, in <strong>Inventive Computation and Information Technologies (ICIT)</strong>, Springer, pp. 333–347, 2021. DOI: <a href="https://doi.org/10.1007/978-981-33-4305-4_26">10.1007/978-981-33-4305-4_26</a>.</li>
-  <li> <b>Atonu Ghosh</b>, Koushik Majumder, and Debashis De, <em>Android Forensics Using Sleuth Kit Autopsy</em>, in <strong>International Conference on Mathematics and Computing (ICMC)</strong>, Springer, pp. 297–308, 2020. DOI: <a href="https://doi.org/10.1007/978-981-15-8061-1_24">10.1007/978-981-15-8061-1_24</a>.</li>
-  <li> <b>Atonu Ghosh</b>, <em>Intelligent Appliances Controller Using Raspberry Pi</em>, in <strong>Information Technology, Electronics and Mobile Communication Conference (IEMCON)</strong>, IEEE, pp. 1–5, 2016. DOI: <a href="https://doi.org/10.1109/IEMCON.2016.7746253">10.1109/IEMCON.2016.7746253</a>.</li>
-</ol>
+      <article class="fcard">
+        <div class="fcard__icn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></div>
+        <h3>Full-Stack IoT</h3>
+        <p>From schematic and firmware to REST APIs, dashboards and deployment. Custom PCBs on one end, containerised cloud on the other — and everything that connects them.</p>
+        <div class="fcard__tags"><span class="tag">Django</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">PostgreSQL</span></div>
+      </article>
 
-
-</div></div></div><div class="card text-left mb-2"><div class="card-header" id="h-preprints"><h5 class="mb-0"><a aria-controls="c-preprints" aria-expanded="false" class="d-block stretched-link" data-toggle="collapse" href="#c-preprints">Preprints/Communicated</a></h5></div><div aria-labelledby="h-preprints" class="collapse" data-parent="#pubAccordion" id="c-preprints"><div class="card-body">
-
-    <ol class="prefixed mb-0" reversed style="--prefix:'PP';">
-  <!-- <li> <b>Atonu Ghosh</b>, Akhilesh Mohanasundaram, Srishivanth R F, and Sudip Misra, <em>TLoRa: Implementing TLS Over LoRa for Secure HTTP Communication in IoT</em>, To be submitted to IEEE Transactions on Network Science and Engineering (2025). arXiv: <a href="https://arxiv.org/abs/2510.02519">2510.02519</a>.</li> -->
-  <!-- <li> <b>Atonu Ghosh</b>, David Breuss, Simon Howind, Sudip Misra, Thilo Sauter, and Surjya Kanta Pal, <em>SenseAI: Staged Model Deployment for Resource Constrained AIoT-Enabled Industrial Environments</em>, Under review at IEEE Transactions on Artificial Intelligence (2025).</li> -->
-  <li> <b>Atonu Ghosh</b> and Sudip Misra, <em>LoRaConnect: Unlocking HTTP Potential on LoRa Backbones for Remote Areas and Ad-Hoc Networks</em>, IEEE Transactions on Network Science and Engineering (Reject & Resubmit, 2025). arXiv: <a href="https://arxiv.org/abs/2501.02469">2501.02469</a>.</li>
-  <li> <b>Atonu Ghosh</b>, Sharath Chandan, and Sudip Misra, <em>Implementing LoRa MIMO System for Internet of Things</em>, IEEE Internet of Things Journal (Reject & Resubmit, 2025). arXiv: <a href="https://arxiv.org/abs/2501.07148v1">2501.07148v1</a>.</li>
-</ol>
-    
-</div></div></div></div></div></section>
-    
-<section class="section-sm bg-primary" id="contact">
-<div class="container text-center text-sm-left">
-<div class="row align-items-center">
-<div class="col-sm offset-md-1 mb-4 mb-md-0">
-<h6 class="title text-light">Want to work with me?</h6>
-<p class="m-0 text-light">Feel free to reach out!</p>
-</div>
-<div class="col-sm offset-sm-2 offset-md-3">
-<a class="m-0 text-light">atonughosh@outlook.com</a><br/>
-<a class="m-0 text-light">atonughosh@kgpian.iitkgp.ac.in</a>
-</div>
-</div>
-</div>
+      <article class="fcard">
+        <div class="fcard__icn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h12l-3-3M20 16H8l3 3"/></svg></div>
+        <h3>Digital Transformation</h3>
+        <p>Turning field data into decisions — instrumenting operations, automating manual process steps, and moving organisations from paperwork to data-driven control.</p>
+        <div class="fcard__tags"><span class="tag">IIoT</span><span class="tag">Automation</span><span class="tag">Cloud</span></div>
+      </article>
+    </div>
+  </div>
 </section>
-<!-- Footer -->
-<div class="container">
+
+<!-- ============================ WORK =========================== -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow"><span class="idx">03</span> — Selected work</p>
+      <h2 class="section-title">Systems that left the lab.</h2>
+      <p class="section-lead">A few projects I've led or built end-to-end. Most are patented; several run in production at industrial sites and municipal utilities.</p>
+    </div>
+
+    <div class="work-grid reveal-stagger">
+      <article class="pcard">
+        <div class="pcard__top">
+          <span class="pcard__kind">Industrial deployment</span>
+          <span class="pill pill--live"><span class="d" aria-hidden="true"></span>In production</span>
+        </div>
+        <h3>EOT Crane Condition Monitoring</h3>
+        <p class="pcard__where">Tata Steel Downstream Products Ltd — Jamshedpur, India</p>
+        <p>Led a team of four to build and deploy a full-stack condition-monitoring system for Electric Overhead Travelling cranes — real-time vibration, temperature and electrical sensing streamed to plant-floor dashboards. Patented and running in production.</p>
+        <div class="pcard__stack"><span class="tag">Raspberry Pi 5</span><span class="tag">ESP32</span><span class="tag">MicroPython</span><span class="tag">MQTT</span><span class="tag">Django</span><span class="tag">Docker</span><span class="tag">PostgreSQL</span><span class="tag">Grafana</span><span class="tag">Azure</span></div>
+      </article>
+
+      <article class="pcard">
+        <div class="pcard__top">
+          <span class="pcard__kind">Flagship research</span>
+          <span class="pill pill--patent">Patented · arXiv</span>
+        </div>
+        <h3>HTTP &amp; TLS over LoRa</h3>
+        <p class="pcard__where">Siia - SWAN Lab, IIT Kharagpur, India</p>
+        <p>A transparent proxy that accepts ordinary HTTPS from a Wi-Fi device, carries the request across a LoRa backhaul, and completes a full end-to-end TLS 1.3 handshake at the far end — unlocking the web for remote and ad-hoc networks with no cellular coverage.</p>
+        <div class="pcard__stack"><span class="tag">ESP32</span><span class="tag">RFM95W</span><span class="tag">Raspberry Pi</span><span class="tag">Nginx</span><span class="tag">TLS 1.3</span><span class="tag">Python</span></div>
+      </article>
+
+      <article class="pcard">
+        <div class="pcard__top">
+          <span class="pcard__kind">Research system</span>
+          <span class="pill pill--patent">Patented · arXiv</span>
+        </div>
+        <h3>LoRa MIMO Testbed</h3>
+        <p class="pcard__where">4×4 spatial multiplexing — SWAN Lab, IIT Kharagpur, India</p>
+        <p>Designed and evaluated a 4×4 MIMO system for LoRa that uses spatial multiplexing to exchange parallel data streams, pushing effective throughput well past a single link while keeping LoRa's low-power profile intact.</p>
+        <div class="pcard__stack"><span class="tag">ESP32</span><span class="tag">RFM95W</span><span class="tag">MicroPython</span><span class="tag">Spatial MUX</span></div>
+      </article>
+
+      <article class="pcard">
+        <div class="pcard__top">
+          <span class="pcard__kind">Gov-sponsored deployment</span>
+          <span class="pill pill--live"><span class="d" aria-hidden="true"></span>In use</span>
+        </div>
+        <h3>Water Distribution Pressure Monitoring</h3>
+        <p class="pcard__where">Haldia Water Services · CPHEEO, Govt. of India</p>
+        <p>A solar-powered, remotely configurable IoT node that streams domestic water-pipe pressure to the cloud for ML analysis — built for a CPHEEO / Ministry of Housing &amp; Urban Affairs project and deployed in the field.</p>
+        <div class="pcard__stack"><span class="tag">Pressure sensor</span><span class="tag">ESP32</span><span class="tag">4G modem</span><span class="tag">Solar + battery</span><span class="tag">MQTT</span><span class="tag">AWS</span></div>
+      </article>
+
+      <article class="pcard">
+        <div class="pcard__top">
+          <span class="pcard__kind">Industrial proof-of-concept</span>
+          <span class="pill pill--patent">Tested</span>
+        </div>
+        <h3>Legacy Sensor IoT Enablement</h3>
+        <p class="pcard__where">Bokaro Steel Plant, India</p>
+        <p>Led a team of three to retrofit 4–20 mA Honeywell gas sensors and relay their readings over LoRaWAN to a central server — bringing decades-old industrial instrumentation online without ripping it out and replacing it.</p>
+        <div class="pcard__stack"><span class="tag">ESP32</span><span class="tag">MicroPython</span><span class="tag">RFM95W</span><span class="tag">LoRaWAN</span><span class="tag">AWS</span></div>
+      </article>
+
+      <article class="pcard">
+        <div class="pcard__top">
+          <span class="pcard__kind">Research system</span>
+          <span class="pill pill--patent">Patented</span>
+        </div>
+        <h3>Lightweight Blockchain on a Microcontroller</h3>
+        <p class="pcard__where">Decentralised trust for IoT — SWAN Lab</p>
+        <p>A lightweight blockchain framework running entirely on a resource-constrained microcontroller, giving IoT nodes tamper-proof logging and data exchange with no dependence on cloud infrastructure.</p>
+        <div class="pcard__stack"><span class="tag">ESP32</span><span class="tag">MicroPython</span><span class="tag">On-device ledger</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PUBLICATIONS & PATENTS ================= -->
+<section class="section section--alt" id="research">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow"><span class="idx">04</span> — Publications &amp; patents</p>
+      <h2 class="section-title">The written record.</h2>
+      <p class="section-lead">16 patents (3 granted), 12 peer-reviewed papers across IEEE Transactions and journals, and 3 preprints under review. Full list on <a href="https://scholar.google.com/citations?user=ULCTZG4AAAAJ&hl=en" target="_blank" rel="noopener" style="color:var(--accent)">Google Scholar</a>.</p>
+    </div>
+
+    <div class="reveal">
+      <div class="tabs" role="tablist" aria-label="Publications and patents">
+        <button class="tab is-active" role="tab" id="tab-pg" data-target="panel-pg" aria-selected="true" aria-controls="panel-pg" tabindex="0">Granted patents<span class="count">3</span></button>
+        <button class="tab" role="tab" id="tab-pf" data-target="panel-pf" aria-selected="false" aria-controls="panel-pf" tabindex="-1">Pending patents<span class="count">13</span></button>
+        <button class="tab" role="tab" id="tab-j" data-target="panel-j" aria-selected="false" aria-controls="panel-j" tabindex="-1">Journal articles<span class="count">5</span></button>
+        <button class="tab" role="tab" id="tab-pp" data-target="panel-pp" aria-selected="false" aria-controls="panel-pp" tabindex="-1">Preprints<span class="count">3</span></button>
+        <button class="tab" role="tab" id="tab-cc" data-target="panel-cc" aria-selected="false" aria-controls="panel-cc" tabindex="-1">Conf. &amp; chapter<span class="count">4</span></button>
+      </div>
+
+      <!-- Granted patents -->
+      <div class="panel is-active" id="panel-pg" role="tabpanel" aria-labelledby="tab-pg">
+        <ol class="pub-list">
+          <li class="pub-item"><div class="pub-item__ref">PG-3</div><div class="pub-item__body">
+            <p><span class="me">Atonu Ghosh</span>, Biswajit Ghosh, Ruelia Saha, Sudip Misra, and Arijit Roy. <span class="t">System for Real-Time Intrusion Detection, Actuation and Alert and Method Thereof.</span></p>
+            <div class="pub-item__meta"><span class="status-chip status-chip--granted">Granted</span><span class="pub-item__ref">Indian Patent No. 566326 · May 16, 2025</span></div>
+          </div></li>
+          <li class="pub-item"><div class="pub-item__ref">PG-2</div><div class="pub-item__body">
+            <p>Subhas Chandra Misra, Debanjan Das, Sudip Misra, Venkanna Udutalapally, <span class="me">Atonu Ghosh</span>, and Tanushree Pan. <span class="t">Wireless Network Device for Wireless Communication with User Devices in a Wireless Communication Network.</span></p>
+            <div class="pub-item__meta"><span class="status-chip status-chip--granted">Granted</span><span class="pub-item__ref">Indian Patent No. 539308 · May 27, 2024</span></div>
+          </div></li>
+          <li class="pub-item"><div class="pub-item__ref">PG-1</div><div class="pub-item__body">
+            <p>Subhas Chandra Misra, Debanjan Das, Venkanna Udutalapally, Sudip Misra, and <span class="me">Atonu Ghosh</span>. <span class="t">Blockchain-Enabled IoT System and Method for Securing Real-Time Data in a Microcontroller-Based Blockchain Network.</span></p>
+            <div class="pub-item__meta"><span class="status-chip status-chip--granted">Granted</span><span class="pub-item__ref">Indian Patent No. 529261 · Mar 20, 2024</span></div>
+          </div></li>
+        </ol>
+      </div>
+
+      <!-- Filed patents -->
+      <div class="panel" id="panel-pf" role="tabpanel" aria-labelledby="tab-pf" hidden>
+        <ol class="pub-list">
+          <li class="pub-item"><div class="pub-item__ref">PF-13</div><div class="pub-item__body"><p>Syam Sidhardhan and <span class="me">Atonu Ghosh</span>, <span class="t">Hub-Side Intelligence for Vendor Agnostic IoT Sensor Battery Life Extension.</span></p><div class="pub-item__meta"><span class="pub-item__ref">File No. 202641080289 · Jun 30, 2026</span></div></div></li>
+          <li class="pub-item"><div class="pub-item__ref">PF-12</div><div class="pub-item__body"><p>Sudip Misra, <span class="me">Atonu Ghosh</span>, Spandan Duari, Kumarjit Ray, Rajdeep Ghosh, Panagiotis Sarigiannidis, Nikos Ntampakis, and Vasileios Argyriou. <span class="t">System and Method for Automated Sensor Identification and Data Delivery Over Universal Serial Bus.</span></p><div class="pub-item__meta"><span class="pub-item__ref">File No. 202531114519 · Nov 20, 2025</span></div></div></li>
+          <li class="pub-item"><div class="pub-item__ref">PF-11</div><div class="pub-item__body"><p>Sudip Misra, <span class="me">Atonu Ghosh</span>, Bontalakoti Aditya, Kumarjit Ray, and Rajdeep Ghosh. <span class="t">An Intelligent Liquid-Level Sensing and Pump Control System.</span></p><div class="pub-item__meta"><span class="status-chip status-chip--granted">Commercialised</span><span class="pub-item__ref">File No. 202531098034 · Oct 10, 2025</span></div></div></li>
+          <li class="pub-item"><div class="pub-item__ref">PF-10</div><div class="pub-item__body"><p>Sudip Misra, <span class="me">Atonu Ghosh</span>, Biswajit Ghosh, Swaraj Lahiri, Bharat Bhushan, Subrata Ray, and Sonali Pan. <span class="t">Embedded System and Method for Condition Monitoring of Electric Overhead Travelling (EOT) Cranes.</span></p><div class="pub-item__meta"><span class="status-chip status-chip--granted">In use</span><span class="pub-item__ref">File No. 202531033456 · Apr 4, 2025</span></div></div></li>
+          <li class="pub-item"><div class="pub-item__ref">PF-9</div><div class="pub-item__body"><p>Aparesh Mahapatra, Biswajit Ghosh, <span class="me">Atonu Ghosh</span>, Suryansh Sharma, Debayan Biswas, Sudip Misra, Partha Sarathi Ghoshal, and Manoj Kumar Tiwari. <span class="t">IoT-Enabled Smart Hardware System with Edge Intelligence for Rapid Leak Detection in Water Distribution Networks.</span></p><div class="pub-item__meta"><span class="status-chip status-chip--granted">In use</span><span class="pub-item__ref">File No. 202531028121 · Mar 25, 2025</span></div></div></li>
+          <li class="pub-item"><div class="pub-item__ref">PF-8</div><div class="pub-item__body"><p><span class="me">Atonu Ghosh</span> and Sudip Misra. <span class="t">LoRaNext: Embedded System and Method for Decentralized HTTP Communication Over LoRa.</span></p><div class="pub-item__meta"><span class="pub-item__ref">File No. 202531024600 · Mar 19, 2025</span></div></div></li>
+          <li class="pub-item"><div class="pub-item__ref">PF-7</div><div class="pub-item__body"><p><span class="me">Atonu Ghosh</span>, Sudip Misra, and Sharath Chandan. <span class="t">Long Range Multiple Input Multiple Output System for High Throughput Communication.</span></p><div class="pub-item__meta"><span class="pub-item__ref">File No. 202431094880 · Dec 2, 2024</span></div></div></li>
+          <li class="pub-item"><div class="pub-item__ref">PF-6</div><div class="pub-item__body"><p>Kumarjit Ray, <span class="me">Atonu Ghosh</span>, Biswajit Ghosh, and Sudip Misra. <span class="t">Universal Software-Defined LoRa Gateway Based Network System for Remote Programming and Management of Network Functions.</span></p><div class="pub-item__meta"><span class="pub-item__ref">File No. 202431046371 · Jun 15, 2024</span></div></div></li>
+          <li class="pub-item"><div class="pub-item__ref">PF-5</div><div class="pub-item__body"><p>Ruelia Saha, <span class="me">Atonu Ghosh</span>, and Sudip Misra. <span class="t">Confidant: An Internet of Things-Based System and Method for Mental Health Monitoring and Support.</span></p><div class="pub-item__meta"><span class="pub-item__ref">File No. 202431034007 · Apr 29, 2024</span></div></div></li>
+          <li class="pub-item"><div class="pub-item__ref">PF-4</div><div class="pub-item__body"><p>Biswajit Ghosh, <span class="me">Atonu Ghosh</span>, and Sudip Misra. <span class="t">An Edge Intelligence Based Programmable Logic Controller.</span></p><div class="pub-item__meta"><span class="pub-item__ref">File No. 202431032957 · Apr 25, 2024</span></div></div></li>
+          <li class="pub-item"><div class="pub-item__ref">PF-3</div><div class="pub-item__body"><p><span class="me">Atonu Ghosh</span>, Sudip Misra, Arijit Roy, and Anandarup Mukherjee. <span class="t">A System for Remote Monitoring, Actuation and Data Prediction.</span></p><div class="pub-item__meta"><span class="pub-item__ref">File No. 202231040824 · Jul 17, 2022</span></div></div></li>
+          <li class="pub-item"><div class="pub-item__ref">PF-2</div><div class="pub-item__body"><p>Sudip Misra, Saswati Pal, and <span class="me">Atonu Ghosh</span>. <span class="t">Modularized IoT-Based On-Demand Ambulatory Hospital Recommender System.</span></p><div class="pub-item__meta"><span class="pub-item__ref">File No. 202231008007 · Feb 15, 2022</span></div></div></li>
+          <li class="pub-item"><div class="pub-item__ref">PF-1</div><div class="pub-item__body"><p>Sudip Misra, Debanjan Das, Venkanna Udutalapally, <span class="me">Atonu Ghosh</span>, and Pallav Kumar Deb. <span class="t">A Secured Edge-Based Automated Power Control and Communication System for Legacy IoT Infrastructures.</span></p><div class="pub-item__meta"><span class="pub-item__ref">File No. 202131038016 · Aug 23, 2021</span></div></div></li>
+        </ol>
+      </div>
+
+      <!-- Journal articles -->
+      <div class="panel" id="panel-j" role="tabpanel" aria-labelledby="tab-j" hidden>
+        <ol class="pub-list">
+          <li class="pub-item"><div class="pub-item__ref">J-5</div><div class="pub-item__body">
+            <p><span class="me">Atonu Ghosh</span>, Akhilesh Mohanasundaram, Srishivanth R. F., and Sudip Misra. <span class="t">TLoRa: Implementing TLS Over LoRa for Secure HTTP Communication in IoT.</span> <span class="pub-item__venue">IEEE Transactions on Industrial Informatics</span> — accepted, in press, 2025.</p>
+            <div class="pub-item__meta"><span class="status-chip status-chip--granted">Accepted · IEEE TII</span><a class="pub-link" href="https://arxiv.org/abs/2510.02519" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>arXiv: 2510.02519</a></div>
+          </div></li>
+          <li class="pub-item"><div class="pub-item__ref">J-4</div><div class="pub-item__body">
+            <p><span class="me">Atonu Ghosh</span>, Sudip Misra, Venkanna Udutalapally, and Debanjan Das. <span class="t">LoRaute: Routing Messages in Backhaul LoRa Networks for Underserved Regions.</span> <span class="pub-item__venue">IEEE Internet of Things Journal</span>, vol. 10, pp. 19964–19971, 2023.</p>
+            <div class="pub-item__meta"><a class="pub-link" href="https://doi.org/10.1109/JIOT.2023.3281941" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>DOI: 10.1109/JIOT.2023.3281941</a></div>
+          </div></li>
+          <li class="pub-item"><div class="pub-item__ref">J-3</div><div class="pub-item__body">
+            <p><span class="me">Atonu Ghosh</span>, Sudip Misra, and Venkanna Udutalapally. <span class="t">Multiobjective Optimization and Sensor Correlation Framework for IoT Data Validation.</span> <span class="pub-item__venue">IEEE Sensors Journal</span>, vol. 22, pp. 23581–23589, 2022.</p>
+            <div class="pub-item__meta"><a class="pub-link" href="https://doi.org/10.1109/JSEN.2022.3215993" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>DOI: 10.1109/JSEN.2022.3215993</a></div>
+          </div></li>
+          <li class="pub-item"><div class="pub-item__ref">J-2</div><div class="pub-item__body">
+            <p><span class="me">Atonu Ghosh</span>, Ruelia Saha, and Sudip Misra. <span class="t">Persistent Service Provisioning Framework for IoMT-Based Emergency Mobile Healthcare Units.</span> <span class="pub-item__venue">IEEE Journal of Biomedical and Health Informatics</span>, vol. 26, pp. 5851–5858, 2022.</p>
+            <div class="pub-item__meta"><a class="pub-link" href="https://doi.org/10.1109/JBHI.2022.3172624" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>DOI: 10.1109/JBHI.2022.3172624</a></div>
+          </div></li>
+          <li class="pub-item"><div class="pub-item__ref">J-1</div><div class="pub-item__body">
+            <p><span class="me">Atonu Ghosh</span>, Anandarup Mukherjee, and Sudip Misra. <span class="t">SEGA: Secured Edge Gateway Microservices Architecture for IIoT-Based Machine Monitoring.</span> <span class="pub-item__venue">IEEE Transactions on Industrial Informatics</span>, vol. 18, pp. 1949–1956, 2021.</p>
+            <div class="pub-item__meta"><a class="pub-link" href="https://doi.org/10.1109/TII.2021.3102158" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>DOI: 10.1109/TII.2021.3102158</a></div>
+          </div></li>
+        </ol>
+      </div>
+
+      <!-- Preprints / under review -->
+      <div class="panel" id="panel-pp" role="tabpanel" aria-labelledby="tab-pp" hidden>
+        <ol class="pub-list">
+          <li class="pub-item"><div class="pub-item__ref">P-3</div><div class="pub-item__body">
+            <p><span class="me">Atonu Ghosh</span>, David Breuss, Simon Howind, Sudip Misra, Thilo Sauter, and Surjya Kanta Pal. <span class="t">SenseAI: Staged Model Deployment for Resource-Constrained AIoT-Enabled Industrial Environments.</span> <span class="pub-item__venue">IEEE Transactions on Industrial Cyber-Physical Systems</span>.</p>
+            <div class="pub-item__meta"><span class="status-chip status-chip--review">In Revision · 2025</span></div>
+          </div></li>
+          <li class="pub-item"><div class="pub-item__ref">P-2</div><div class="pub-item__body">
+            <p><span class="me">Atonu Ghosh</span> and Sudip Misra. <span class="t">LoRaConnect: Unlocking HTTP Potential on LoRa Backbones for Remote Areas and Ad-Hoc Networks.</span> <span class="pub-item__venue">IEEE Transactions on Network Science and Engineering</span>.</p>
+            <div class="pub-item__meta"><span class="status-chip status-chip--review">In Revision · 2025</span><a class="pub-link" href="https://arxiv.org/abs/2501.02469" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>arXiv: 2501.02469</a></div>
+          </div></li>
+          <li class="pub-item"><div class="pub-item__ref">P-1</div><div class="pub-item__body">
+            <p>Aparesh Mahapatra, <span class="me">Atonu Ghosh</span>, Sudip Misra, Sharath Chandan, and Partha Sarathi Ghosal. <span class="t">Breaking the Throughput Barrier of LoRa in IoT: A Multi-Radio MIMO System for WDNs.</span> <span class="pub-item__venue">IEEE Internet of Things Journal</span>.</p>
+            <div class="pub-item__meta"><span class="status-chip status-chip--review">In Revision · 2026</span><a class="pub-link" href="https://arxiv.org/abs/2501.07148v1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>arXiv: 2501.07148</a></div>
+          </div></li>
+        </ol>
+      </div>
+
+      <!-- Conference & book chapter -->
+      <div class="panel" id="panel-cc" role="tabpanel" aria-labelledby="tab-cc" hidden>
+        <p class="subhead">Conference papers</p>
+        <ol class="pub-list">
+             IEEE, 2026 (Accepted).
+          <li class="pub-item"><div class="pub-item__ref">C-4</div><div class="pub-item__body">
+            <p>Syam Sidhardhan, T K Ramesh, <span class="me">Atonu Ghosh</span>, Inpyo Kang, and Dongwook Lee. <span class="t">MultiHub: Smart home iot hub coordination framework for energy-efficient sensing.</span> <span class="pub-item__venue">International Conference on Electronics, Computing and Communication Technologies (CONECCT)</span>, IEEE, 2026.</p>
+            <div class="pub-item__meta"><a class="pub-link" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>Accepted</a></div>
+          </div></li>
+          <li class="pub-item"><div class="pub-item__ref">C-3</div><div class="pub-item__body">
+            <p><span class="me">Atonu Ghosh</span>, Debashis De, and Koushik Majumder. <span class="t">A Systematic Review of Log-Based Cloud Forensics.</span> <span class="pub-item__venue">Inventive Computation and Information Technologies (ICICIT)</span>, Springer, pp. 333–347, 2021.</p>
+            <div class="pub-item__meta"><a class="pub-link" href="https://doi.org/10.1007/978-981-33-4305-4_26" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>DOI: 10.1007/978-981-33-4305-4_26</a></div>
+          </div></li>
+          <li class="pub-item"><div class="pub-item__ref">C-2</div><div class="pub-item__body">
+            <p><span class="me">Atonu Ghosh</span>, Koushik Majumder, and Debashis De. <span class="t">Android Forensics Using Sleuth Kit Autopsy.</span> <span class="pub-item__venue">International Conference on Mathematics and Computing (ICMC)</span>, Springer, pp. 297–308, 2020.</p>
+            <div class="pub-item__meta"><a class="pub-link" href="https://doi.org/10.1007/978-981-15-8061-1_24" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>DOI: 10.1007/978-981-15-8061-1_24</a></div>
+          </div></li>
+          <li class="pub-item"><div class="pub-item__ref">C-1</div><div class="pub-item__body">
+            <p><span class="me">Atonu Ghosh</span>. <span class="t">Intelligent Appliances Controller Using Raspberry Pi.</span> <span class="pub-item__venue">IEEE Information Technology, Electronics and Mobile Communication Conference (IEMCON)</span>, pp. 1–5, 2016.</p>
+            <div class="pub-item__meta"><a class="pub-link" href="https://doi.org/10.1109/IEMCON.2016.7746253" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>DOI: 10.1109/IEMCON.2016.7746253</a></div>
+          </div></li>
+        </ol>
+        <p class="subhead">Book chapter</p>
+        <ol class="pub-list">
+          <li class="pub-item"><div class="pub-item__ref">B-1</div><div class="pub-item__body">
+            <p><span class="me">Atonu Ghosh</span>, Koushik Majumder, and Debashis De. <span class="t">A Systematic Review of Digital, Cloud and IoT Forensics.</span> In <span class="pub-item__venue">The "Essence" of Network Security: An End-to-End Panorama</span>, Springer, 2021.</p>
+            <div class="pub-item__meta"><a class="pub-link" href="https://doi.org/10.1007/978-981-15-9317-8_2" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>DOI: 10.1007/978-981-15-9317-8_2</a></div>
+          </div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= EXPERIENCE ======================== -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow"><span class="idx">05</span> — Experience</p>
+      <h2 class="section-title">Where I've done the work.</h2>
+    </div>
+
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <div class="tl-item__date">Jan 2026 — Jul 2026</div>
+        <span class="tl-item__dot" aria-hidden="true"></span>
+        <div class="tl-item__body">
+          <h3>Research Intern</h3>
+          <div class="tl-item__org">Samsung R&amp;D Institute India — Bangalore</div>
+          <p>Applied research in IoT and edge computing at Samsung's India R&amp;D centre, alongside the final stretch of my doctorate.</p>
+          <div class="tl-item__stack"><span class="tag">IoT</span><span class="tag">Edge</span><span class="tag">Systems R&amp;D</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-item__date">Jan 2021 — Present</div>
+        <span class="tl-item__dot" aria-hidden="true"></span>
+        <div class="tl-item__body">
+          <h3>Ph.D. Research Scholar</h3>
+          <div class="tl-item__org">IIT Kharagpur — SWAN Lab (Prof. Sudip Misra)</div>
+          <p>Research on IoT, IIoT, edge computing, LPWAN and condition monitoring. Led four industrial deployments and several patented systems end-to-end — from schematic and firmware through cloud dashboards to field validation with entities like Tata Steel and Haldia Water Services, India.</p>
+          <div class="tl-item__stack"><span class="tag">IoT</span><span class="tag">Edge Computing</span><span class="tag">IIoT</span><span class="tag">LPWAN</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-item__date">Nov 2020 — Oct 2025</div>
+        <span class="tl-item__dot" aria-hidden="true"></span>
+        <div class="tl-item__body">
+          <h3>System Architect <span style="color:var(--ink-3);font-weight:500;font-size:.85rem">· voluntary</span></h3>
+          <div class="tl-item__org">SensorDrops Networks Pvt. Ltd.</div>
+          <p>Architected edge-ML systems for a deep-tech startup: pet-immune human intruder detection integrated with existing CCTV DVRs — now commercialised — and modular machine &amp; ambient condition monitoring reusable across warehouse and industrial settings.</p>
+          <div class="tl-item__stack"><span class="tag">YOLO</span><span class="tag">Django</span><span class="tag">ONVIF / RTSP</span><span class="tag">InfluxDB</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-item__date">Oct 2020 — Dec 2023</div>
+        <span class="tl-item__dot" aria-hidden="true"></span>
+        <div class="tl-item__body">
+          <h3>Research Fellow <span style="color:var(--ink-3);font-weight:500;font-size:.85rem">· JRF → SRF</span></h3>
+          <div class="tl-item__org">IIT Kharagpur / MeitY, Govt. of India</div>
+          <p>Junior then Senior Research Fellow in the <em>TribeConnect</em>, a MeitY, Government of India sponsored research project. It aimed to build IoT + ML platform for tribal agriculture and healthcare in Chhattisgarh. I contributed by building rural LoRa networks, IoT gateways with optional load control, and full-stack dashboards with database replication for lossy links.</p>
+          <div class="tl-item__stack"><span class="tag">LoRa</span><span class="tag">Raspberry Pi</span><span class="tag">Microcontroller</span><span class="tag">Django</span><span class="tag">MariaDB</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== RECOGNITION ======================== -->
+<section class="section section--alt" id="recognition">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow"><span class="idx">06</span> — Recognition, teaching &amp; service</p>
+      <h2 class="section-title">Beyond the research.</h2>
+    </div>
+
+    <div class="rec-grid reveal-stagger">
+      <div class="rcard">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M6 4h12v4a6 6 0 0 1-12 0V4zM6 5H4a2 2 0 0 0 0 4h1M18 5h2a2 2 0 0 1 0 4h-1"/></svg>Awards &amp; positions</h3>
+        <ul class="rlist">
+          <li><span class="yr">2024</span><span><b>Qualcomm Innovation Fellowship</b> — Finalist</span></li>
+          <li><span class="yr">2026</span><span>Invited as a <b>Session Chair, IEEE CONECCT 2026</b> Conference, Bangalore, India.</span></li>
+          <li><span class="yr">2024</span><span>Invited to help conduct lab sessions, IoT Training Programme, <b>IIT Patna</b></span></li>
+          <li><span class="yr">2022</span><span>Speaker, Workshop on IoT, MITM Jamshedpur</span></li>
+          <li><span class="yr">2022–23</span><span>Secretary, <b>IEEE Computer Society</b> SBC, IIT Kharagpur</span></li>
+        </ul>
+      </div>
+
+      <div class="rcard">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M4 21V10l6-3v3l6-3v14M8 21v-4h4v4"/></svg>Technology in production</h3>
+        <ul class="rlist">
+          <li><span class="yr">2025</span><span><b>Liquid-Level Sensing &amp; Pump Control</b> — licensed via IIT Kharagpur to Imperial Electrical Appliances Ltd., India</span></li>
+          <li><span class="yr">2024</span><span><b>Real-Time Intrusion Detection</b> — commercialised via SensorDrops Networks</span></li>
+          <li><span class="yr">2024</span><span><b>EOT Crane Condition Monitoring</b> — in use at Tata Steel Downstream Products Ltd., Inda</span></li>
+          <li><span class="yr">2024</span><span><b>Water-Network Leak Detection</b> — in use at Haldia Water Services, India</span></li>
+        </ul>
+      </div>
+
+      <div class="rcard">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3L2 8.5 12 14l10-5.5L12 3z"/><path d="M6 10.5V16c0 1.2 2.7 2.5 6 2.5s6-1.3 6-2.5v-5.5"/></svg>Teaching</h3>
+        <ul class="rlist">
+          <li><span class="yr">6×</span><span>TA, <b>Introduction to IoT</b> (NPTEL) — Prof. Sudip Misra, IIT Kharagpur <span class="sub">· 2023–25</span></span></li>
+          <li><span class="yr">Inst.</span><span>TA — Programming &amp; Data Structures, Computer Networks Lab, Ubiquitous Computing <span class="sub">· 2021–26</span></span></li>
+          <li><span class="yr">Instr.</span><span>Instructor — <b>Security for IoT &amp; DevSecOps</b>, Tata NeuSkills</span></li>
+          <li><span class="yr">Instr.</span><span>Hands-on IoT + ML and Cloud Computing short courses, IIT Kharagpur</span></li>
+        </ul>
+      </div>
+
+      <div class="rcard">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Peer review</h3>
+        <ul class="rlist">
+          <li><span class="yr">Journals</span><span>IEEE Transactions on Communications · IEEE Internet of Things · Springer Nature Scientific Reports · J. of Computer Virology &amp; Hacking Techniques · Wiley Software: Practice &amp; Experience</span></li>
+          <li><span class="yr">Books</span><span>Technical reviewer for <b>Apress</b> &amp; <b>Springer Nature</b> — titles on IoT security, healthcare 4.0, supply-chain and UAV swarms</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section-head reveal" style="margin-top:clamp(3rem,6vw,4.5rem)">
+      <p class="eyebrow"><span class="idx">07</span> — Education</p>
+      <h2 class="section-title">Foundations.</h2>
+    </div>
+    <div class="edu-grid reveal-stagger">
+      <div class="ecard">
+        <div class="ecard__yr">2021 — Present</div>
+        <h3>Ph.D., Computer Science &amp; Engineering</h3>
+        <div class="ecard__inst">Indian Institute of Technology Kharagpur</div>
+        <div class="ecard__meta">SWAN Lab · Advisor <b>Prof. Sudip Misra</b></div>
+      </div>
+      <div class="ecard">
+        <div class="ecard__yr">2018 — 2020</div>
+        <h3>M.Tech, Computer Science &amp; Engineering</h3>
+        <div class="ecard__inst">MAKAUT (formerly WBUT), West Bengal</div>
+        <div class="ecard__meta">Blockchain + IPFS logging</div>
+      </div>
+      <div class="ecard">
+        <div class="ecard__yr">2014 — 2017</div>
+        <h3>B.Tech, Computer Science &amp; Engineering</h3>
+        <div class="ecard__inst">Institute of Engineering &amp; Management, Kolkata</div>
+        <!-- <div class="ecard__meta">CGPA <b>7.71 / 10</b></div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================== CONTACT ========================== -->
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <div class="contact__card reveal">
+      <div class="contact__grid">
+        <div>
+          <p class="eyebrow"><span class="idx">08</span> — Contact</p>
+          <h2>Let's build something<br>that ships.</h2>
+          <p>I'm open to research collaborations, postdoc and industry roles, and selective consulting in IoT, edge and LPWAN systems. Email is the fastest way to reach me — I read every message.</p>
+          <div class="hero__cta" style="margin-top:1.6rem">
+            <a href="mailto:atonughosh@outlook.com" class="btn btn--primary">Email me</a>
+            <a href="Atonu_Ghosh_Resume.pdf" class="btn btn--ghost">Résumé</a>
+          </div>
+        </div>
+
+        <div class="contact__methods">
+          <a class="cmethod" href="mailto:atonughosh@outlook.com">
+            <span class="cmethod__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 5.5L20 7"/></svg></span>
+            <span class="cmethod__t"><small>Primary email</small><span>atonughosh@outlook.com</span></span>
+          </a>
+          <a class="cmethod" href="mailto:atonughosh@kgpian.iitkgp.ac.in">
+            <span class="cmethod__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3L2 8.5 12 14l10-5.5L12 3z"/><path d="M6 10.5V16c0 1.2 2.7 2.5 6 2.5s6-1.3 6-2.5v-5.5"/></svg></span>
+            <span class="cmethod__t"><small>Academic email</small><span>atonughosh@kgpian.iitkgp.ac.in</span></span>
+          </a>
+          <a class="cmethod" href="https://www.linkedin.com/in/atonughoshcse/" target="_blank" rel="noopener">
+            <span class="cmethod__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C21 8.65 22 10.9 22 14v7h-4v-6.2c0-1.48-.03-3.4-2.07-3.4-2.07 0-2.39 1.62-2.39 3.29V21h-4z"/></svg></span>
+            <span class="cmethod__t"><small>LinkedIn</small><span>/in/atonughoshcse</span></span>
+          </a>
+          <a class="cmethod" href="tel:+919775517009">
+            <span class="cmethod__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg></span>
+            <span class="cmethod__t"><small>Phone</small><span>+91 97755 17009</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== FOOTER ========================== -->
 <footer class="footer">
-<div class="social-links text-center m-auto ml-sm-auto">
-<a class="link" href="https://www.facebook.com/atonu.ghosh"><i class="ti-facebook"></i></a>
-<a class="link" href="https://www.linkedin.com/in/atonughoshcse/"><i class="ti-linkedin"></i></a>
-</div>
+  <div class="wrap footer__inner">
+    <a class="footer__brand" href="#home">
+      <svg class="brand__glyph" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3"><circle cx="32" cy="32" r="9"/><circle cx="32" cy="32" r="18" opacity=".55"/><circle cx="32" cy="32" r="27" opacity=".25"/></g><circle cx="32" cy="32" r="4.6" fill="currentColor"/></svg>
+      Atonu Ghosh
+    </a>
+    <div class="footer__meta">© <span id="year">2026</span> Atonu Ghosh</div>
+    <div class="footer__socials">
+      <a href="https://github.com/atonughosh" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5A10.5 10.5 0 0 0 8.68 22c.53.1.72-.23.72-.5v-1.9c-2.93.64-3.55-1.25-3.55-1.25-.48-1.22-1.17-1.55-1.17-1.55-.96-.65.07-.64.07-.64 1.06.08 1.62 1.09 1.62 1.09.94 1.62 2.47 1.15 3.07.88.1-.68.37-1.15.67-1.42-2.34-.27-4.8-1.17-4.8-5.2 0-1.15.41-2.09 1.09-2.83-.11-.27-.47-1.34.1-2.8 0 0 .89-.28 2.9 1.08a10 10 0 0 1 5.28 0c2-1.36 2.89-1.08 2.89-1.08.58 1.46.22 2.53.11 2.8.68.74 1.09 1.68 1.09 2.83 0 4.04-2.47 4.93-4.82 5.19.38.33.72.97.72 1.96v2.9c0 .28.19.61.73.5A10.5 10.5 0 0 0 12 1.5z"/></svg></a>
+      <a href="https://www.linkedin.com/in/atonughoshcse/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C21 8.65 22 10.9 22 14v7h-4v-6.2c0-1.48-.03-3.4-2.07-3.4-2.07 0-2.39 1.62-2.39 3.29V21h-4z"/></svg></a>
+      <a href="https://scholar.google.com/citations?user=ULCTZG4AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3L2 8.5 12 14l10-5.5L12 3z"/><path d="M6 10.5V16c0 1.2 2.7 2.5 6 2.5s6-1.3 6-2.5v-5.5"/></svg></a>
+      <a href="mailto:atonughosh@outlook.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 5.5L20 7"/></svg></a>
+    </div>
+  </div>
 </footer>
-</div>
-<!-- Scripts -->
-<script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-<script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-<script src="assets/js/meyawo.js"></script>
-<a class="btn btn-primary resume-fab d-sm-none" download="" href="Atonu_CV.pdf">Download Resume</a>
 
+<button id="to-top" class="to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m0 0l-6 6m6-6l6 6"/></svg>
+</button>
 
-<script>
-(function(){
-  var nav  = document.querySelector('.custom-navbar');
-  var btn  = document.getElementById('nav-toggle');
-  var menu = document.getElementById('primary-menu');
-  if (!nav || !btn || !menu) return;
-
-  // Toggle for mobile: use BOTH the theme's .show and your .menu-open
-  btn.addEventListener('click', function(e){
-    e.preventDefault();
-    var isOpen = nav.classList.toggle('menu-open');
-    menu.classList.toggle('show', isOpen);
-    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
-
-  // On desktop, normalize (no leftover mobile classes)
-  function normalizeForDesktop(){
-    if (window.matchMedia('(min-width: 992px)').matches){
-      nav.classList.remove('menu-open');
-      menu.classList.remove('show');
-      btn.setAttribute('aria-expanded','false');
-      // kill any inline styles that might hide it
-      ['display','visibility','opacity','position','transform','width','height','left','right','top','bottom']
-        .forEach(function(p){ menu.style.removeProperty(p); });
-    }
-  }
-  document.addEventListener('DOMContentLoaded', normalizeForDesktop);
-  window.addEventListener('resize', normalizeForDesktop);
-})();
-</script>
-
-
-
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
